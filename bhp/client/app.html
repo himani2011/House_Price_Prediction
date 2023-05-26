@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bangaluru House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="image"></div>
+<form class="form">
+<table>
+<tr>
+<td>
+	<h2>Area</h2>
+	</td>
+	<td><h2>:</h2></td>
+	<td>
+	<input class="area"  type="text" id="sqft" class="floatLabel" name="Squareft" placeholder="In Square Feet" style="margin-left:25px;">
+    </td>
+</tr>
+<tr>
+<td style="margin-right:5px;">
+	<h2>Bhk</h2></td>
+	<td><h2>:</h2></td>
+	<td>
+		<input type="radio" id="bhk1" style="margin-left:30px;" name="bhk" value="1" checked/>
+		<label for="bhk1" style="color:white;">1</label>
+		<input type="radio" id="bhk2" name="bhk" value="2"/>
+		<label for="bhk2" style="color:white;">2</label>
+		<input type="radio" id="bhk3" name="bhk" value="3"/>
+		<label for="bhk3" style="color:white;">3</label>
+		<input type="radio" id="bhk4" name="bhk" value="4"/>
+		<label for="bhk4" style="color:white;">4</label>
+		<input type="radio" id="bhk5" name="bhk" value="5"/>
+		<label for="bhk5" style="color:white;">5</label>
+	</td>
+	</tr>
+	</table>
+	</form>
+<form class="form">
+<table>
+<tr>
+<td>
+	<h2>Bath:</h2></td>
+	<td><h2></h2></td>
+	<td style="margin-left:2px;">
+		<input type="radio" id="bath1" name="bath" style="margin-left:2px;" value="1" checked/>
+		<label for="bath1" style="color:white;">1</label>
+		<input type="radio" id="bath2" name="bath" value="2"/>
+		<label for="bath2" style="color:white;">2</label>
+		<input type="radio" id="bath3" name="bath" value="3"/>
+		<label for="bath3" style="color:white;">3</label>
+		<input type="radio" id="bath4" name="bath" value="4"/>
+		<label for="bath4" style="color:white;">4</label>
+		<input type="radio" id="bath5" name="bath" value="5"/>
+		<label for="bath5" style="color:white;">5</label>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<h2>Location</h2></td>
+		<td><h2>:</h2></td>
+		<td>
+	<div>
+  <select class="location" name="" id="locations">
+    <option value="" disabled="disabled" selected="selected">Please select a Location</option>
+		<option>Swayam Society</option>
+        <option>Royal street</option>
+		<option>Ambica nagar</option>
+  </select>
+</div>
+</td></tr>
+</table>
+<table>
+<tr>
+	<button class="submit" onclick="onClickPrice()" type="button">Estimate Price</button></tr><tr>
+	<tr><h2 align="center">--Result shown under--</h2></tr>
+	<div id="estimatedPrice" class="result">	<h1></h1> </div></tr>
+</body>
+</html>
